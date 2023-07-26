@@ -196,7 +196,34 @@ display: block;
 100%{
     width: 100%;
 }
-}; 
+}
+/* bookmark */
+.bookmark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bookmark.disappear {
+  display: none;
+}
+.book-desc {
+  color: white;
+}
+.bookmark-img {
+  width: 35px;
+  cursor: pointer;
+}
+.bookmark-img1 {
+  width: 35px;
+  display: none;
+  cursor: pointer;
+}
+.bookmark-img.no-active {
+  display: none;
+}
+.bookmark-img1.active {
+  display: block;
+}
 
 @media screen and (max-width: 292px) {
   .h1-header {

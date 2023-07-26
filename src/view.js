@@ -68,6 +68,11 @@ function createSectionCard() {
     <p class="desc-wind2"></p>
   </div>
 </div>
+<div class="bookmark">
+<h3 class="book-desc">Add to bookmarks</h3>
+<img src="./images/bookmark1.png" class="bookmark-img">
+<img src="./images/bookmark2.png" class="bookmark-img1">
+</div>
   </div>
   </div>
   `;
