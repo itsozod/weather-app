@@ -91,6 +91,7 @@ body::before {
 /* section card */
 .section {
   display: flex;
+  justify-content: center;
 }
 .main-div {
   display: flex;
