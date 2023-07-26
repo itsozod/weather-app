@@ -25,6 +25,7 @@ body::before {
 #content {
   position: relative;
 }
+/* header */
 #header {
   width: 100%;
   position: relative;
@@ -59,6 +60,7 @@ body::before {
   flex-direction: column;
   width: 100%;
 }
+/* form container, input and searchBtn */
 .form-container {
   display: flex;
   justify-content: center;
@@ -86,6 +88,114 @@ body::before {
   margin-top: 5px;
   cursor: pointer;
 }
+/* section card */
+.section {
+  display: flex;
+}
+.main-div {
+  display: flex;
+  justify-content: center;
+}
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    max-width: 520px;
+    padding: 10px;
+    margin: 10px;
+    display: none;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  max-width: 500px;
+  padding: 10px;
+  margin: 10px;
+}
+.sos-container {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+display: none;
+}
+.sos-container.display {
+display: flex;
+}
+.city-name {
+margin-top: -15px;
+}
+.temp {
+margin-top: 10px;
+}
+.icon {
+width: 100px;
+height: auto;
+object-fit: cover;
+}
+.details {
+display: flex;
+justify-content: space-between;
+color: white;
+}
+.humidity, .wind {
+width: 40px;
+height: auto;
+}
+.col1, .col2, .col3, .col4{
+padding: 8px;
+}
+.sos {
+width: 150px;
+height: auto;
+margin-top: 10px;
+}
+.err {
+font-size: 20px;
+margin-top: 10px;
+}
+
+/* loader */
+.progress{
+position: relative;
+height: 30px;
+width: 200px;
+border: 10px solid #f4a261;
+border-radius: 15px;
+display: none;
+}
+.progress .color{
+position: absolute;
+background-color: #ffffff;
+width: 0px;
+height: 10px;
+border-radius: 15px;
+animation: progres 3s forwards;    
+}
+.show {
+display: block;
+}
+@keyframes progres{
+0%{
+  width: 0%;
+}
+25%{
+    width: 50%;
+}
+50%{
+    width: 75%;
+}
+75%{
+    width: 85%;
+}
+100%{
+    width: 100%;
+}
+}; 
 
 @media screen and (max-width: 292px) {
   .h1-header {
