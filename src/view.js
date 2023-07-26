@@ -31,7 +31,7 @@ function createFormContainer() {
     </form>
     <img src="./images/searchBtn.png" alt="search" class="searchBtn">
     `;
-    return formContainer;
+  return formContainer;
 }
 function createSectionCard() {
   const sectionCard = document.createElement("section");
@@ -42,6 +42,32 @@ function createSectionCard() {
   <div class="progress">
   <div class="color"></div>
   </div>
+  <div class="card">
+  <div class="sos-container">
+  <img src="#" alt="sos" class="sos">
+  <p class="err"></p>
+  </div>
+  <h1 class="city-name"></h1>
+  <img src="#" alt="icon" class="icon" />
+  <p class="info"></p>
+  <p class="temp"></p>
+  </div>
+  <div class="details">
+  <div class="col1">
+    <img src="#" alt="humidity" class="humidity" />
+  </div>
+  <div class="col2">
+    <p class="desc-hum1"></p>
+    <p class="desc-hum2"></p>
+  </div>
+  <div class="col3">
+    <img src="#" alt="wind" class="wind" />
+  </div>
+  <div class="col4">
+    <p class="desc-wind1"></p>
+    <p class="desc-wind2"></p>
+  </div>
+</div>
   </div>
   </div>
   `;
@@ -54,8 +80,8 @@ function loadPage() {
   const main = createMain();
   const formContainer = createFormContainer();
   const sectionCard = createSectionCard();
-  main.appendChild(formContainer); 
-  main.appendChild(sectionCard); 
+  main.appendChild(formContainer);
+  main.appendChild(sectionCard);
   content.appendChild(header);
   content.appendChild(main);
 }
