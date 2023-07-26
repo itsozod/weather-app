@@ -33,13 +33,29 @@ function createFormContainer() {
     `;
     return formContainer;
 }
+function createSectionCard() {
+  const sectionCard = document.createElement("section");
+  sectionCard.classList.add("section");
+  sectionCard.innerHTML = `
+  <div class="main-div">
+  <div class="card-container">
+  <div class="progress">
+  <div class="color"></div>
+  </div>
+  </div>
+  </div>
+  `;
+  return sectionCard;
+}
 
 function loadPage() {
   const content = document.querySelector("#content");
   const header = createHeader();
   const main = createMain();
   const formContainer = createFormContainer();
+  const sectionCard = createSectionCard();
   main.appendChild(formContainer); 
+  main.appendChild(sectionCard); 
   content.appendChild(header);
   content.appendChild(main);
 }
