@@ -8,7 +8,16 @@
     "parserOptions": {
         "ecmaVersion": "latest"
     },
-    "rules" : {
-        "no-console": "off"
-    }
+        "rules": {
+          "no-console": "off",
+          "strict": "off",
+          "func-names": "off",
+          "camelcase": "off",
+          "no-shadow": "off",
+          "lines-around-directive": "off",
+          "no-sequences": "off",
+          "no-unused-expressions": "off",
+          "no-return-assign": "off", 
+          "one-var": "off"
+        }
 }
