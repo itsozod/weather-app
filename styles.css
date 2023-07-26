@@ -1,0 +1,94 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  min-height: 100vh;
+}
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(images/sunset.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9;
+}
+#content {
+  position: relative;
+}
+#header {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 182, 193, 0.5);
+  padding: 10px;
+  /* display: none; */
+}
+.sun {
+  margin-left: 20px;
+  width: 40px;
+  height: auto;
+  animation: rotateAndTranslate 5s linear infinite;
+}
+
+@keyframes rotateAndTranslate {
+  0% {
+    transform: rotate(0deg) translate(-15px);
+  }
+  50% {
+    transform: rotate(180deg) translate(15px);
+  }
+  100% {
+    transform: rotate(360deg) translate(-15px);
+  }
+}
+#main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.form-container {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  /* display: none; */
+}
+#form {
+  margin-top: 10px;
+}
+.search {
+  padding: 10px;
+  width: 80px;
+  border-radius: 20px;
+  outline: none;
+  border: 2px solid lightseagreen;
+  transition: 0.5s;
+}
+.search.focus {
+  width: 180px;
+}
+.searchBtn {
+  width: 50px;
+  height: auto;
+  margin-left: 10px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 292px) {
+  .h1-header {
+    font-size: 28px;
+  }
+}
