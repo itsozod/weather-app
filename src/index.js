@@ -1,1 +1,6 @@
-console.log("Hello world!");
+import loadPage from "./view";
+
+function showPage() {
+    loadPage();
+}
+showPage();
