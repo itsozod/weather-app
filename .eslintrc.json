@@ -20,6 +20,9 @@
           "no-return-assign": "off", 
           "one-var": "off",
           "yoda": "off",
-          "prefer-arrow-callback": "off"
+          "prefer-arrow-callback": "off",
+          "no-alert": "off",
+          "no-param-reassign": "off",
+          "no-cond-assign": "off"
         }
 }

@@ -1,5 +1,6 @@
 import loadPage from "./view";
 import { defaultCity, showCity } from "./api";
+import { handleClick, createSavedCards } from "./bookmark";
 
 function showPage() {
   loadPage();
@@ -23,5 +24,14 @@ function showPage() {
   searchInput.addEventListener("focus", () => {
     searchInput.classList.add("focus");
   });
+
+  const bookmarkImg = document.querySelector(".bookmark-img");
+  bookmarkImg.addEventListener("click", handleClick);
+
+  document.addEventListener("DOMContentLoaded", createSavedCards);
+
+//   const bookmarkHolder = document.querySelector(".bookmark-holder");
+//   const deleteBtn = bookmarkHolder.querySelector(".delete-button");
+//   deleteBtn.addEventListener("click", deleteEvent);
 }
 showPage();

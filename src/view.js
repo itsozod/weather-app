@@ -78,6 +78,22 @@ function createSectionCard() {
   `;
   return sectionCard;
 }
+function createBookmarkInfo() {
+  const bookmarkInfo = document.createElement('div');
+  bookmarkInfo.classList.add('bookmark-info');
+
+  const h1Info = document.createElement("h1");
+  h1Info.classList.add("h1-info");
+  h1Info.textContent = "Bookmarks";
+  bookmarkInfo.appendChild(h1Info);
+  return bookmarkInfo;
+}
+
+function createBookmarkHolder() {
+  const bookmarkHolder = document.createElement("section");
+  bookmarkHolder.classList.add("bookmark-holder");
+  return bookmarkHolder;
+}
 
 function loadPage() {
   const content = document.querySelector("#content");
@@ -85,8 +101,12 @@ function loadPage() {
   const main = createMain();
   const formContainer = createFormContainer();
   const sectionCard = createSectionCard();
+  const bookmarkInfo = createBookmarkInfo();
+  const bookmarkHolder = createBookmarkHolder();
   main.appendChild(formContainer);
   main.appendChild(sectionCard);
+  main.appendChild(bookmarkInfo);
+  main.appendChild(bookmarkHolder);
   content.appendChild(header);
   content.appendChild(main);
 }
