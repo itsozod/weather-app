@@ -98,15 +98,26 @@ body::before {
   justify-content: center;
 }
 .card-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.7);
-    max-width: 520px;
-    padding: 10px;
-    margin: 10px;
-    display: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  max-width: 520px;
+  padding: 10px;
+  margin: 10px;
+  display: none;
+}
+.card-container1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  max-width: 520px;
+  padding: 10px;
+  margin: 10px;
+  /* display: none; */
 }
 .card {
   display: flex;
@@ -118,84 +129,88 @@ body::before {
   margin: 10px;
 }
 .sos-container {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-display: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
 }
 .sos-container.display {
-display: flex;
+  display: flex;
 }
 .city-name {
-margin-top: -15px;
+  margin-top: -15px;
 }
 .temp {
-margin-top: 10px;
+  margin-top: 10px;
 }
 .icon {
-width: 100px;
-height: auto;
-object-fit: cover;
+  width: 100px;
+  height: auto;
+  object-fit: cover;
 }
 .details {
-display: flex;
-justify-content: space-between;
-color: white;
+  display: flex;
+  justify-content: space-between;
+  color: white;
 }
-.humidity, .wind {
-width: 40px;
-height: auto;
+.humidity,
+.wind {
+  width: 40px;
+  height: auto;
 }
-.col1, .col2, .col3, .col4{
-padding: 8px;
+.col1,
+.col2,
+.col3,
+.col4 {
+  padding: 8px;
 }
 .sos {
-width: 150px;
-height: auto;
-margin-top: 10px;
+  width: 150px;
+  height: auto;
+  margin-top: 10px;
 }
 .err {
-font-size: 20px;
-margin-top: 10px;
+  font-size: 20px;
+  margin-top: 10px;
 }
 
 /* loader */
-.progress{
-position: relative;
-height: 30px;
-width: 200px;
-border: 10px solid #f4a261;
-border-radius: 15px;
-display: none;
+.progress {
+  position: relative;
+  height: 30px;
+  width: 200px;
+  border: 10px solid #f4a261;
+  border-radius: 15px;
+  display: none;
 }
-.progress .color{
-position: absolute;
-background-color: #ffffff;
-width: 0px;
-height: 10px;
-border-radius: 15px;
-animation: progres 3s forwards;    
+.progress .color {
+  position: absolute;
+  background-color: #ffffff;
+  width: 0px;
+  height: 10px;
+  border-radius: 15px;
+  animation: progres 3s forwards;
 }
 .show {
-display: block;
+  display: block;
 }
-@keyframes progres{
-0%{
-  width: 0%;
-}
-25%{
+@keyframes progres {
+  0% {
+    width: 0%;
+  }
+  25% {
     width: 50%;
-}
-50%{
+  }
+  50% {
     width: 75%;
-}
-75%{
+  }
+  75% {
     width: 85%;
-}
-100%{
+  }
+  100% {
     width: 100%;
-}
+  }
 }
 /* bookmark */
 .bookmark {
@@ -223,6 +238,37 @@ display: block;
 }
 .bookmark-img1.active {
   display: block;
+}
+/* bookmark info */
+.bookmark-info {
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(
+    rgba(255, 160, 122, 0.5),
+    rgba(119, 136, 153, 0.5)
+  );
+  display: none;
+}
+.bookmark-info.appear {
+  display: flex;
+}
+/* bookmark holder */
+.bookmark-holder {
+  display: flex;
+  overflow-y: scroll;
+  overflow-y: hidden;
+}
+.delete-button {
+  padding: 6px;
+  background-color: lightsalmon;
+  border: 2px solid lightslategray;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.delete-button:hover {
+  background-color: lightcoral;
 }
 
 @media screen and (max-width: 292px) {
