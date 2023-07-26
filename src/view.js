@@ -1,3 +1,4 @@
+// function for creating header
 function createHeader() {
   const header = document.createElement("header");
   header.setAttribute("id", "header");
@@ -16,12 +17,14 @@ function createHeader() {
   return header;
 }
 
+// function for creating main
 function createMain() {
   const main = document.createElement("main");
   main.setAttribute("id", "main");
   return main;
 }
 
+// finction for creating form container
 function createFormContainer() {
   const formContainer = document.createElement("div");
   formContainer.classList.add("form-container");
@@ -33,6 +36,7 @@ function createFormContainer() {
     `;
   return formContainer;
 }
+// function for creating section card
 function createSectionCard() {
   const sectionCard = document.createElement("section");
   sectionCard.classList.add("section");
@@ -78,6 +82,7 @@ function createSectionCard() {
   `;
   return sectionCard;
 }
+// function for creating bookmark's information
 function createBookmarkInfo() {
   const bookmarkInfo = document.createElement('div');
   bookmarkInfo.classList.add('bookmark-info');
@@ -89,12 +94,14 @@ function createBookmarkInfo() {
   return bookmarkInfo;
 }
 
+// function for creating bookmarks holder
 function createBookmarkHolder() {
   const bookmarkHolder = document.createElement("section");
   bookmarkHolder.classList.add("bookmark-holder");
   return bookmarkHolder;
 }
 
+// function for loading all created elements
 function loadPage() {
   const content = document.querySelector("#content");
   const header = createHeader();

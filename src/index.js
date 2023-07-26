@@ -2,6 +2,7 @@ import loadPage from "./view";
 import { defaultCity, showCity } from "./api";
 import { handleClick, createSavedCards } from "./bookmark";
 
+// function for showing all imported function on the page
 function showPage() {
   loadPage();
   defaultCity();
@@ -29,9 +30,5 @@ function showPage() {
   bookmarkImg.addEventListener("click", handleClick);
 
   document.addEventListener("DOMContentLoaded", createSavedCards);
-
-//   const bookmarkHolder = document.querySelector(".bookmark-holder");
-//   const deleteBtn = bookmarkHolder.querySelector(".delete-button");
-//   deleteBtn.addEventListener("click", deleteEvent);
 }
 showPage();

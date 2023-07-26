@@ -1,3 +1,4 @@
+// function for displaying a default city using API
 async function defaultCity() {
   const cityName = document.querySelector(".city-name");
   const temp = document.querySelector(".temp");
@@ -56,6 +57,7 @@ async function defaultCity() {
   }
 }
 
+// function for displaying different cities using API and the value of the search input
 async function showCity() {
   const searchInput = document.querySelector(".search");
   const sosContainer = document.querySelector(".sos-container");

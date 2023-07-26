@@ -34,7 +34,9 @@ body::before {
   align-items: center;
   background-color: rgba(255, 182, 193, 0.5);
   padding: 10px;
-  /* display: none; */
+}
+.h1-header {
+  font-family: 'DM Serif Display', serif;
 }
 .sun {
   margin-left: 20px;
@@ -65,7 +67,6 @@ body::before {
   display: flex;
   justify-content: center;
   padding: 10px;
-  /* display: none; */
 }
 #form {
   margin-top: 10px;
@@ -97,15 +98,17 @@ body::before {
   display: flex;
   justify-content: center;
 }
+/* card container */
 .card-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.7);
-  max-width: 520px;
+  width: 270px;
   padding: 10px;
   margin: 10px;
+  border-radius: 10px;
   display: none;
 }
 .card-container1 {
@@ -114,17 +117,17 @@ body::before {
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.7);
-  max-width: 520px;
+  width: 270px;
   padding: 10px;
   margin: 10px;
-  /* display: none; */
+  border-radius: 10px;
 }
 .card {
   display: flex;
   flex-direction: column;
   align-items: center;
   color: white;
-  max-width: 500px;
+  max-width: 400px;
   padding: 10px;
   margin: 10px;
 }
@@ -212,7 +215,7 @@ body::before {
     width: 100%;
   }
 }
-/* bookmark */
+/* bookmarks */
 .bookmark {
   display: flex;
   justify-content: center;
@@ -248,6 +251,8 @@ body::before {
     rgba(119, 136, 153, 0.5)
   );
   display: none;
+  font-family: 'DM Serif Display', serif;
+  text-shadow: 2px 2px 5px white;
 }
 .bookmark-info.appear {
   display: flex;
@@ -270,9 +275,12 @@ body::before {
 .delete-button:hover {
   background-color: lightcoral;
 }
-
+/* media queries */
 @media screen and (max-width: 292px) {
   .h1-header {
     font-size: 28px;
+  }
+  .card-container, .card-container1 {
+    width: 260px;
   }
 }
