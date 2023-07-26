@@ -18,6 +18,8 @@
           "no-sequences": "off",
           "no-unused-expressions": "off",
           "no-return-assign": "off", 
-          "one-var": "off"
+          "one-var": "off",
+          "yoda": "off",
+          "prefer-arrow-callback": "off"
         }
 }
